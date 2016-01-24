@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <title>Under construction</title>
-	</head>
-	<body>
-    <h1>Corgi love <3</h1>
-    <img src="images/corgi.jpg" alt="cute corgi">
-	  <p>I wish this cutie was mine!</p>
-    <p>My name is Therése and I am a programmer. Programmer is a word that contains a massive amount of choices and paths to make and take. I have not chosen a straight path yet. I graduated with a Bachelor's degree in Media Technology at Linköping's university this last spring. This fall I am starting my development career at ComHem via Academic Work. I am really excited and look forward to learning a massive amount of new things.</p>
-    <p>If you would like to get a glimpse of my every day and a lot of fantastic selfies, check out my <a href="https://instagram.com/stadiljus/">Instrgram</a>.</p>
-    <p>This is a list of things in my mind right now</p>
-    <ul>
-      <li>Mushrooms</li>
-      <li>Snakes</li>
-      <li>Dogs</li>
-      <li>What I should eat</li>
-      <li>Code</li>
-    </ul>
-    <button>Change user</button>
-    <!-- it is desirable to have the script loaded in at the bottom because the browser reads the code top down and if we have javascript that wants to act on html it cannot if the html is not loaded before the script -->
-    <script type="text/javascript" src="scripts/main.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>tkomstadius</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="app/style.css">
+  </head>
+
+  <body ng-app="tkApp">
+    <div id="header">
+      <!--<div class="item"><a href="#/">hello</a></div>
+      <div class="item"><a href="#/about">Who am I?</a></div>-->
+      <div id="therese"></div>
+      <!--<div class="item"><a href="#/cv">What have I learned?</a></div>
+      <div class="item"><a href="#/">What have I done?</a></div>-->
+    </div>
+
+    <div id="main">
+      <div ng-view></div>
+    </div>
+    <div id="footer">
+      <a href="https://www.facebook.com/tkomstadius" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+      <a href="https://twitter.com/tkomstadius" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a href="http://instagram.com/stadiljus/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+      <a href="https://se.linkedin.com/pub/ther%C3%A9se-komstadius/aa/47a/510" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a href="https://github.com/tkomstadius" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+
+    <script src="app/app.js"></script>
   </body>
 </html>
