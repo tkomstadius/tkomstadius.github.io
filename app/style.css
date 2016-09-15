@@ -1,234 +1,136 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-/* ------------INDEX------------*/
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
+
 body {
+  padding: 0;
   margin: 0;
   font-family: sans-serif;
-  border: solid 10px rgba(176, 56, 78, 0.9);
-  border-radius: 2px;
-  font-family: 'Raleway', sans-serif;
+  font-family: inconsolata, monospace;
 }
-
-#header {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  height: 70px;
-}
-
-.item {
-  margin: 10px;
-  width: 200px;
-  border: solid 1px dimgrey;
-  border-radius: 5%;
-  text-align: center;
-  background-color: #4F8A9E;
-}
-
-.item a {
-  padding: 5px;
-  color: darkslategrey;
-  font-family: sans-serif;
-  text-decoration: none;
-}
-
-.item a:hover {
-  color: lightslategrey;
-}
-
-#therese {
-  margin: 10px 30px 10px 30px;
-  width: 150px;
-  height: 50px;
-  background-image: url('../images/therese.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#main {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  padding: 30px;
-  min-height: calc(100vh - 204px);
-  background-color: rgba(176, 56, 78, 0.9);
-  border-radius: 2px;
-}
-
-#footer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 70px;
-}
-
-#footer a {
-  color: black;
-}
-
-#footer a:hover {
-  color: rgba(176, 56, 78, 0.9);
-}
-
-i {
-  margin: 5px;
-}
-
-/* -----ABOUT----- */
-#aboutContainer {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-/* ----MAIN---- */
-#me {
-  height: 285px;
-  width: 260px;
+/* ------------CLASSES------------*/
+.photoFrame {
+  width: 10em;
+  height: 10em;
   border-radius: 50%;
-  background-image: url("/images/looking_up.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-#me:hover {
-  background-image: url("/images/looking_down.jpg");
+.contentBorder-gray {
+  border: 0.5px solid rgb(144,150,148);
+  margin: 1% 10% 0 10%;
+  padding: 1em;
 }
 
-#mainContainer {
-  margin-left: 10%;
-  margin-right: 10%;
+.contentBorder-white {
+  border: 0.5px solid rgb(255,255,255);
+  margin: 1% 10% 0 10%;
+  padding: 1em;
 }
 
-.mainHello {
+.portfolioContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 5vh;
+  margin: 2em 0 2em 0;
 }
 
-.mainHello h1 {
-  font-size: 10vw;
-  margin-left: 5vw;
-  line-height: 10vh;
+.videoText {
+  width: 560px;
+  margin: 1em 2em;
 }
 
-/* ----CV----*/
-#huvud {
-  position: absolute;
-  top: 100px;
-  left: 300px;
-  height: 100px;
-  width: 100px;
-  background-color: white;
-  border-radius: 50%;
+.linkFrame {
+  width: 5em;
+  height: 5em;
+  margin: 2em 1em;
 }
 
-#vänsterÖga {
-  position: absolute;
-  top: 130px;
-  left: 338px;
-  width: 7px;
-  height: 15px;
-  background-color: black;
-  border-radius: 3.5px;
+
+/* ------------HEADER------------*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(162,168,166);
+  background-image: linear-gradient(to right, rgb(184,190,188), rgb(144,150,148));
+  /*77 77 71*/
+  line-height: 3;
 }
 
-#högerÖga {
-  position: absolute;
-  top: 130px;
-  left: 355px;
-  width: 7px;
-  height: 15px;
-  background-color: black;
-  border-radius: 3.5px;
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 1em;
+  font-size: 20px;
+  /* 1em is equal to the current font size*/
 }
 
-#mun {
-  position: absolute;
-  top: 160px;
-  left: 335px;
-  width: 30px;
-  height: 20px;
-  background-color: black;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+/* ------------COVER------------*/
+#cover {
+  padding-top: 4em;
+  min-height: 99vh;
+  background-image: url('/images/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#kropp {
-  position: absolute;
-  width: 20px;
-  height: 200px;
-  top: 190px;
-  left: 340px;
-  background-color: white;
+#cover h1 {
+  text-align: center;
+  margin: 1em;
 }
 
-#överarm {
-  position: absolute;
-  width: 200px;
-  height: 20px;
-  top: 220px;
-  left: 250px;
-  background-color: white;
+.attributes {
+  display: flex;
+  justify-content: center;
+  color: rgb(166,172,170);
 }
 
-#vänsterUnder {
-  position: absolute;
-  width: 20px;
-  height: 80px;
-  top: 157px;
-  left: 246px;
-  background-color: white;
-  border-radius: 10px;
-  transform: rotateZ(100deg);
-  transform-origin: bottom;
-  animation: vinka 2s infinite;
-  animation-direction: alternate;
+.attributes h2 {
+  margin: 0 0.2em 0.2em 0.2em;
 }
 
-@keyframes vinka {
-  0% {
-    transform: rotateZ(0);
-  }
-  100% {
-    transform-origin: bottom;
-    transform: rotateZ(-60deg);
-  }
+#primary {
+  color: rgb(0,0,0);
+}
+/* ------------ABOUT------------*/
+#about {
+  padding: 4em 0 4em 0;
 }
 
-#högerUnder {
-  position: absolute;
-  width: 20px;
-  height: 80px;
-  top: 215px;
-  left: 455px;
-  background-color: white;
-  border-radius: 10px;
-  transform: rotate(-40deg);
+#me {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 10% 2% 10%;
 }
 
-#vänsterBen {
-  position: absolute;
-  width: 20px;
-  height: 150px;
-  top: 390px;
-  left: 340px;
-  background-color: white;
-  border-radius: 10px;
-  transform-origin: top;
-  transform: rotate(45deg);  
+.photoFrame img {
+  width: 100%;
+  height: 100%;
 }
 
-#högerBen {
-  position: absolute;
-  width: 20px;
-  height: 150px;
-  top: 390px;
-  left: 340px;
-  background-color: white;
-  border-radius: 10px;
-  transform-origin: top;
-  transform: rotate(-45deg);  
+/* ------------PORTFOLIO------------*/
+#portfolio {
+  padding: 4em 0 4em 0;
+  background-color: rgb(144,150,148);
+}
+/* ------------CONTACT------------*/
+#contact {
+  padding: 4em 0 4em 0;
+}
+
+#contactContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.linkFrame img {
+  width: 100%;
+  height: 100%;
 }
