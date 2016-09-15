@@ -4,35 +4,155 @@
     <meta charset="utf-8">
     
     <title>tkomstadius</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="app/style.css">
   </head>
 
-  <body ng-app="tkApp">
-    <div id="header">
-      <!--<div class="item"><a href="#/">hello</a></div>
-      <div class="item"><a href="#/about">Who am I?</a></div>-->
-      <div id="therese"></div>
-      <!--<div class="item"><a href="#/cv">What have I learned?</a></div>
-      <div class="item"><a href="#/">What have I done?</a></div>-->
+  <body>
+    <header>
+      <div id="logo"><a href="#cover">TK</a></div>
+      <div><a href="#about">SELFIE</a></div>
+      <div><a href="#portfolio">DID</a></div>
+      <div><a href="#contact">PING</a></div>
+    </header>
+    <div id="cover">
+      <h1>Therése Komstadius</h1>
+      <div class="attributes">
+        <h2>Young.</h2>
+        <h2>Colorful.</h2>
+        <h2>Spontaneous.</h2>
+        <h2>Driven.</h2>
+      </div>
+      <div class="attributes">
+        <h2>Wierd.</h2>
+        <h2>Talkative.</h2>
+        <h2>Old.</h2>
+        <h2 id="primary">Developer.</h2>
+        <h2>Curious.</h2>
+        <h2>Shy.</h2>
+        <h2>Confused.</h2>
+      </div>
+      <div class="attributes">
+        <h2>Fighting.</h2>
+        <h2>Bold.</h2>
+        <h2>Changing.</h2>
+        <h2>Hungry.</h2>
+        <h2>Nice</h2>
+        <h2>Stressed.</h2>
+      </div>
+      <div class="attributes">
+        <h2>Respectful.</h2>
+        <h2>Ambivalent.</h2>
+      </div>
+      <div class="attributes">
+        <h2>convincible</h2>
+      </div>
     </div>
-
-    <div id="main">
-      <div ng-view></div>
+    <div id="about">
+      <div id="me">
+        <div class="photoFrame"><img src="images/c_me1.jpg" onmouseover="this.src='images/me1.jpg'" onmouseout="this.src='images/c_me1.jpg'" alt="TK"></div>
+        <div class="photoFrame"><img src="images/c_me2.jpg" onmouseover="this.src='images/me2.jpg'" onmouseout="this.src='images/c_me2.jpg'" alt="TK"></div>
+        <div class="photoFrame"><img src="images/c_me3.jpg" onmouseover="this.src='images/me3.jpg'" onmouseout="this.src='images/c_me3.jpg'" alt="TK"></div>
+        <div class="photoFrame"><img src="images/c_me4.jpg" onmouseover="this.src='images/me4.jpg'" onmouseout="this.src='images/c_me4.jpg'" alt="TK"></div>
+        <div class="photoFrame"><img src="images/c_me5.jpg" onmouseover="this.src='images/me5.jpg'" onmouseout="this.src='images/c_me5.jpg'" alt="TK"></div>
+      </div>
+      <div class="contentBorder-gray">
+        <h3>
+          NOW
+        </h3>
+        <p>
+          My name is Therése and I currently live in Stockholm. I work as a developer at Com Hem. Com Hem is a company that delivers TV, telephony and broadband to swedish homes and businesses. I work with systems for our customer service. Our primary languages are Java and JavaScript and we try to use them in a functional way. We also apply a very agile and self organizing way of thinking.
+        </p>
+        <h3>
+          HOW
+        </h3>
+        <p>
+          I just entered my second year as an employee in the IT-industry. Before that I was a cashier at a company that manages cash. I was employed there for seven years. It was a job that required teamwork, vigilance, mental arithmetic and a lot of problem solving.
+        </p>
+        <p>
+          In 2010 I started studying Cognitive Science at Linköping's University, LiU. After one year I felt that this was not right for me so in 2012 I began studying Media Technology, also at LiU. After three years of math and a lot of programming, I took my Bachelor's degree i Technology.
+        </p>
+        <h3>
+          WHO
+        </h3>
+        <p>
+          Born and raised in Linköping, but actually not born there. Moved to Stockholm about a year ago from Norrköping where I were studying. I miss a lot of things about a smaller city. For example walking alone on a sidewalk, not constantly having a mini cold, the availability to hang out with my parents dog at any time. The last one has made me get a new unhealthy habit of asking strangers on the subway if I can pet their dog.
+        </p>
+        <p>
+          I take a lot of selfies. I think it started out ironically but then it just grew on me. I take other kind of photos as well. I like to experiment with my hair because it will grow out again and I have a lot of grey hairs anyway. I do not have fixed interests. I would rather see it like I start projects, sometimes I finish them and sometimes I do not. Except for shopping, I always shop sadly. I am trying to make sustainable choises because I am really scared about the future concerning the environment. I am a lakto/ovo vegetarian because I love cheese. 
+        </p>
+        <h3>
+          THEN
+        </h3>
+        <p>
+          I am a junior full stack developer by title but I am really starting to drift towards front end. This horribly confusing language JavaScript has really grown on me. At the moment I am trying to wrap my head around functional programming. 
+        </p>
+      </div>
     </div>
-    <div id="footer">
-      <a href="https://www.facebook.com/tkomstadius" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-      <a href="https://twitter.com/tkomstadius" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-      <a href="http://instagram.com/stadiljus/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-      <a href="https://se.linkedin.com/pub/ther%C3%A9se-komstadius/aa/47a/510" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-      <a href="https://github.com/tkomstadius" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    <div id="portfolio">
+      <div class="contentBorder-white">
+        <div class="portfolioContainer">
+          <div class="videoText">
+            <h3>LET IT SNOW</h3>
+            <p>
+              This is a project me and four classmates did at university. We did snow simulation for the visualization dome at Norrköpings visualization center. This was done using C++ and OpenGL. We also created a simple control panel using C#.
+            </p>
+          </div>
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_D2nuMoc3es?list=FLJ19e1mx_KxJ4yIFU79ADEQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="portfolioContainer">
+          <div class="videoText">
+            <h3>COME SPRING</h3>
+            <p>
+              Another project from university. Me and three classmates created a model for stiffness in objects using a weight-spring approach. Then we tried simulate this with a visualization. We tried doing this with different degrees of stiffness. We used C++ and OpenGL.
+            </p>
+          </div>
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JV0-wNQNVus?list=FLJ19e1mx_KxJ4yIFU79ADEQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="portfolioContainer">
+          <div class="videoText">
+            <h3>SLEEP DEPRIVED</h3>
+            <p>
+              In 2015 I attended Hack For Sweden. In my team we were three developers and a designer. We had 24 hours to come up with an idea using goverment bodies open data. The idea that we had was to create a platform to bring together people looking for employment with buisnesses seeking employees. No personal information other than the qualifications for the job would be available at initial contact to avoid bias and discrimination.
+            </p>
+            <p>
+              The video is in swedish. 
+            </p>
+          </div>
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SsB9kbuqTHc?list=FLJ19e1mx_KxJ4yIFU79ADEQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
-
-    <script src="app/app.js"></script>
+    <div id="contact">
+      <div class="contentBorder-gray">
+        <div id="contactContainer">
+          <a href="https://github.com/tkomstadius">
+            <div class="linkFrame">
+              <img src="images/b_github.png" onmouseover="this.src='images/g_github.png'" onmouseout="this.src='images/b_github.png'" alt="GitHub">
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/tkomstadius">
+            <div class="linkFrame">
+              <img src="images/b_linkedin.png" onmouseover="this.src='images/g_linkedin.png'" onmouseout="this.src='images/b_linkedin.png'" alt="Linkedin">
+            </div>
+          </a>
+          <a href="https://twitter.com/tkomstadius">
+            <div class="linkFrame">
+              <img src="images/b_twitter.png" onmouseover="this.src='images/g_twitter.png'" onmouseout="this.src='images/b_twitter.png'" alt="Twitter">
+            </div>
+          </a>
+          <a href="https://www.instagram.com/stadiljus/">
+            <div class="linkFrame" >
+              <img src="images/b_instagram.png" onmouseover="this.src='images/g_instagram.png'" onmouseout="this.src='images/b_instagram.png'" alt="Instagram">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
