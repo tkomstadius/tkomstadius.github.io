@@ -23,21 +23,26 @@ body {
 }
 
 .content {
-  margin: 2em auto;
+  margin: 2em 1rem;
   border: 5px solid #BBBBBB;
   border-radius: 5px;
   padding: 2em;
-  margin: 0 1em;
   max-width: 560px;
   font-size: 1em;
   text-align: center;
 }
 
+@media (min-width: 590px) {
+  .content {
+    margin: 0 auto;
+  }
+}
+
 .link {
   text-decoration: none;
-  color: black;
+  color: #fe346e;
 }
 
 .link:hover {
-  color: #fe346e;
+  color: inherit;
 }
